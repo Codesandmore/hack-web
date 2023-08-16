@@ -1785,7 +1785,7 @@ background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
 /* -----------------------------------------------------------
 #Prize Pool
 ------------------------------------------------------------- */
-.prize-main {
+/*.prize-main {
   display: grid;
   text-align: center;
   justify-content: center;
@@ -1793,11 +1793,11 @@ background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
 }
 .prize-card {
   width: 77vw;
-  height: 55vh;
+  height: 100vh;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px;
   overflow: visible;
  
@@ -1865,6 +1865,14 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(0,255,255,0.2) 0%, 
   background: #f3bbe1;
 }
 
+.item--5 {
+  background: #a9ecbf;
+}
+
+.item--6 {
+  background: #f3bbe1;
+}
+
 .quantity {
   font-size: 25px;
   font-weight: 600;
@@ -1890,8 +1898,48 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(0,255,255,0.2) 0%, 
 
 .text--4 {
   color: rgba(220, 91, 183, 1);
+}*/
+
+/*--------------------------------------------------------------
+# Prize
+--------------------------------------------------------------*/
+.prize .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+  border-radius: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(0,255,255,0.2) 0%, rgba(0,212,255,0.2) 100% );
+  backdrop-filter: blur(10px);
 }
 
+.prize .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.prize .box h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.prize .box p {
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+.prize .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.prize .box:hover img {
+  transform: scale(1);
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
