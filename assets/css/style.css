@@ -730,6 +730,7 @@ background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
 .about .icon-box p {
   margin-bottom: 0;
   color: #fff;
+  font-size: 13px;
 }
 
 .about .icon-box:hover i {
