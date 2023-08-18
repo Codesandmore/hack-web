@@ -530,6 +530,7 @@ h6 {
 #hero .btn-get-started:hover {
   background: #00ffff;
   border-color: #00ffff;
+  color:#000;
 }
 
 @media (min-width: 1124px) {
