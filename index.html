@@ -1,174 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
+    <title>.hack23</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <title>.hack23</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> 
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container">
-      <div class="header-container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <!-- <h1 class="text-light"><a href="index.html"><span>Bethany</span></a></h1>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container">
+        <div
+          class="header-container d-flex align-items-center justify-content-between"
+        >
+          <div class="logo">
+            <!-- <h1 class="text-light"><a href="index.html"><span>Bethany</span></a></h1>
           Uncomment below if you prefer to use an image logo -->
-          <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="" class="img-fluid"
+            /></a>
+          </div>
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li>
+                <a href="#about" class="nav-link scrollto"
+                  ><span>About</span></a
+                >
+              </li>
+              <li>
+                <a href="#resume" class="nav-link scrollto"
+                  ><span>Timeline</span></a
+                >
+              </li>
+              <li>
+                <a href="#Theme" class="nav-link scrollto"
+                  ><span>Theme</span></a
+                >
+              </li>
+              <li>
+                <a href="#Prize-Pool" class="nav-link scrollto"
+                  ><span>Prize Pool</span></a
+                >
+              </li>
+              <li>
+                <a href="#sponsors" class="nav-link scrollto">
+                  <span>Sponsors</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="getstarted scrollto"
+                  href="https://hack-23.devpost.com"
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
         </div>
+        <!-- End Header Container -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a href="#about" class="nav-link scrollto"><span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><span>Timeline</span></a>
-          </li>
-          <li><a href="#Theme" class="nav-link scrollto"><span>Theme</span></a>
-          </li>
-          <li><a href="#Prize-Pool" class="nav-link scrollto"><span>Prize Pool</span></a>
-          </li>
-          <li><a href="#sponsors" class="nav-link scrollto"> <span>Sponsors</span></a></li>
-            <li><a class="getstarted scrollto" href="https://hack-23.devpost.com">Register</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <video autoplay muted loop id="myVideo">
+        <source class="bg-video" src="./assets/img/hero.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="container position-relative text-center"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <img src="./assets/img/logo.png" />
+        <h3>22<sup>nd</sup> - 24<sup>th</sup> September</h3>
+        <h2 class="welcome"></h2>
+        <div class="welcom-line-in"></div>
+        <h2>Welcome to .hack();,</h2>
+        <span
+          class="typed"
+          data-typed-items="unlock new possibilities..., code your dreams..., and make lasting memories..."
+        ></span>
 
-      </div><!-- End Header Container -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <video autoplay muted loop id="myVideo">
-      <source class="bg-video" src="./assets/img/hero.mp4" type="video/mp4">
-    </video>
-    <div class="container position-relative text-center" data-aos="fade-up" data-aos-delay="500">
-      <img src="./assets/img/logo.png">
-      <h3>22<sup>nd</sup> - 24<sup>th</sup> September</h3>
-      <h2 class="welcome"></h2>
-      <div class="welcom-line-in"></div>
-      <h2>Welcome to .hack();,
-      </h2>
-      <span class="typed" data-typed-items="unlock new possibilities..., code your dreams..., and make lasting memories..."></span>
-
-      <div class="btn">
-      <a href="https://hack-23.devpost.com" target="_blank" class="btn-get-started scrollto">Register</a>
-    </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-    <div class="wrapper">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-        
-        
-        
-        
-                  </div>
-
-         <!-- About Section - Home Page -->
-    <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-xl-center gy-5">
-
-          <div class="section-title">
-            <h2>About</h2>
-            <!-- <p>.hack();</p> -->
-          </div>
-          <div class="col-xl-5 content">
-            <!--<h3>About Us</h3>-->
-            <h2 style="text-shadow: 1px 1px #000;">About<span style="color:#00ffff"> .hack();</span></h2>
-            <p style="color:#fff ; text-shadow: 1px 1px #000;"> .hack; , a revolutionary platform brought forth by IEEE MACE SB for students since 2020 to explore and innovate in the field of technology with the multiple existing sources available to them. This time, with the fourth edition of .hack; 2023 we set a stage where one can exchange their needs and ideas in a dynamic environment.Look no further to become a part of you are an enthusiastic student looking to make a real impact in the world of technology. Join .hack(); today and be part of a transformative journey where innovation knows no bounds.  <br>Together, let's redefine what's possible!
-            <br><br>So, what's in the box? It's an incredible opportunity for you to join a team of like-minded individuals, work on real projects, and unleash your creativity. Together, we can shape the future of technology and make a lasting impact.</p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-          <div class="col-xl-7">
-            <div class="row gy-4 icon-boxes">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                  <i class="bi bi-database-check"></i>
-                  <h3>Open Data</h3>
-                  <p>Join our hackathon to collaborate with data enthusiasts, crafting tools and solutions using open data to tackle real-world challenges.</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-tree-fill"></i>
-                  <h3>Environmental care</h3>
-                  <p>Decode real-world eco-puzzles. Tech solutions for green initiatives. Collaborate on virtual quests with like-minded hackers.</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div style=" backdrop-filter: blur(10px);" class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-command"></i>
-                  <h3>Automation</h3>
-                  <p>Join >. hack();_ challenges. Collaborate on reshaping digital solutions. Immerse in coding marathon for streamlined innovation, productivity, and boundary-pushing.</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  <h3>Fintech</h3>
-                  <p>Solve real-world financial puzzles. Build apps that transform transactions. Collaborate for secure, efficient fintech innovations.</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-            </div>
-          </div>
-
+        <div class="btn">
+          <a
+            href="https://hack-23.devpost.com"
+            target="_blank"
+            class="btn-get-started scrollto"
+            >Register</a
+          >
         </div>
       </div>
+    </section>
+    <!-- End Hero -->
 
-    </section><!-- End About Section -->
-    
+    <main id="main">
+      <div class="wrapper">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- About Section - Home Page -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+            <div class="section-title">
+              <h2>About</h2>
+              <!-- <p>.hack();</p> -->
+            </div>
+            <div class="col-xl-5 content">
+              <!--<h3>About Us</h3>-->
+              <h2 style="text-shadow: 1px 1px #000">
+                About<span style="color: #00ffff"> .hack();</span>
+              </h2>
+              <p style="color: #fff; text-shadow: 1px 1px #000">
+                .hack; , a revolutionary platform brought forth by IEEE MACE SB
+                for students since 2020 to explore and innovate in the field of
+                technology with the multiple existing sources available to them.
+                This time, with the fourth edition of .hack; 2023 we set a stage
+                where one can exchange their needs and ideas in a dynamic
+                environment.Look no further to become a part of you are an
+                enthusiastic student looking to make a real impact in the world
+                of technology. Join .hack(); today and be part of a
+                transformative journey where innovation knows no bounds.
+                <br />Together, let's redefine what's possible! <br /><br />So,
+                what's in the box? It's an incredible opportunity for you to
+                join a team of like-minded individuals, work on real projects,
+                and unleash your creativity. Together, we can shape the future
+                of technology and make a lasting impact.
+              </p>
+              <a href="#" class="read-more"
+                ><span>Read More</span><i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="col-xl-7">
+              <div class="row gy-4 icon-boxes">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box">
+                    <i class="bi bi-database-check"></i>
+                    <h3>Open Data</h3>
+                    <p>
+                      Join our hackathon to collaborate with data enthusiasts,
+                      crafting tools and solutions using open data to tackle
+                      real-world challenges.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-tree-fill"></i>
+                    <h3>Environmental care</h3>
+                    <p>
+                      Decode real-world eco-puzzles. Tech solutions for green
+                      initiatives. Collaborate on virtual quests with
+                      like-minded hackers.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+
+                <div
+                  style="backdrop-filter: blur(10px)"
+                  class="col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="icon-box">
+                    <i class="bi bi-command"></i>
+                    <h3>Automation</h3>
+                    <p>
+                      Join >. hack();_ challenges. Collaborate on reshaping
+                      digital solutions. Immerse in coding marathon for
+                      streamlined innovation, productivity, and
+                      boundary-pushing.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h3>Fintech</h3>
+                    <p>
+                      Solve real-world financial puzzles. Build apps that
+                      transform transactions. Collaborate for secure, efficient
+                      fintech innovations.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
 
       <!-- ======= Timeline Section ======= -->
       <section id="resume" class="resume">
         <div class="container" data-aos="fade-up">
-      
           <div class="section-title">
             <h2>Timeline</h2>
             <!-- <p>.hack();</p> -->
@@ -178,7 +258,12 @@
               <div class="text-box leftbox">
                 <div class="resume-item">
                   <h4>Abstract Submission Starts</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;18/08/2023 <br><i class="bi bi-clock"></i>&nbsp;8:00 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;18/08/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:00 PM
+                  </h5>
                 </div>
               </div>
             </div>
@@ -186,7 +271,12 @@
               <div class="text-box rightbox">
                 <div class="resume-item">
                   <h4>Ideathon Competition</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;22/08/2023 <br><i class="bi bi-clock"></i>&nbsp;8:00 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;22/08/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:00 PM
+                  </h5>
                 </div>
               </div>
             </div>
@@ -194,7 +284,12 @@
               <div class="text-box leftbox">
                 <div class="resume-item">
                   <h4>Coding Contest</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;01/09/2023 <br><i class="bi bi-clock"></i>&nbsp;8:00 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;01/09/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:00 PM
+                  </h5>
                 </div>
               </div>
             </div>
@@ -202,7 +297,12 @@
               <div class="text-box rightbox">
                 <div class="resume-item">
                   <h4>Failure Talks</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;05/09/2023 <br><i class="bi bi-clock"></i>&nbsp;7:00 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;05/09/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;7:00 PM
+                  </h5>
                 </div>
               </div>
             </div>
@@ -210,7 +310,12 @@
               <div class="text-box leftbox">
                 <div class="resume-item">
                   <h4>Experience Sharing</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;08/09/2023 <br><i class="bi bi-clock"></i>&nbsp;8:30 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;08/09/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:30 PM
+                  </h5>
                 </div>
               </div>
             </div>
@@ -218,7 +323,12 @@
               <div class="text-box rightbox">
                 <div class="resume-item">
                   <h4>Abstract Submission Closing</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;12/09/2023 <br><i class="bi bi-clock"></i>&nbsp;11:59 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;12/09/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;11:59 PM
+                  </h5>
                 </div>
               </div>
             </div>
@@ -226,18 +336,21 @@
               <div class="text-box leftbox">
                 <div class="resume-item">
                   <h4>Hackathon Starts</h4>
-                  <h5><i class="bi bi-calendar-week"></i>&nbsp;22/09/2023 <br><i class="bi bi-clock"></i>&nbsp;1:00 PM</h5>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;22/09/2023 <br /><i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;1:00 PM
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-      </section><!-- End Timeline Section -->
-     
-     
+        </div>
+      </section>
       <!-- End Timeline Section -->
 
-
+      <!-- End Timeline Section -->
 
       <!-- Tracks Section 
 
@@ -287,204 +400,272 @@
 
       </section>-->
 
-            <!-- ======= Prize Section ======= -->
-    <section id="prize" class="prize">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
+      <!-- ======= Prize Section ======= -->
+      <section id="prize" class="prize">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
             <h2>PRIZE POOL</h2>
+          </div>
+
+          <div class="row" style="justify-content: space-around">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="box">
+                <img src="assets/img/1st.png" class="img-fluid" alt="" />
+                <h3>Winner</h3>
+                <p>&#8377;30,000</p>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="box">
+                <img src="assets/img/2nd.png" class="img-fluid" alt="" />
+                <h3>1<sup>st</sup> Runner-Up</h3>
+                <p>&#8377;20,000</p>
+              </div>
+            </div>
+
+
+            <div
+              class="col-lg-6 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <img src="assets/img/3rd.png" class="img-fluid" alt="" />
+                <h3>2<sup>nd</sup> Runner-Up</h3>
+                <p>&#8377;10,000</p>
+              </div>
+
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt="" />
+                <h3>Best Software</h3>
+                <p>&#8377;5,000</p>
+                <p></p>
+              </div>
+            </div>
+
+
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt="" />
+                <h3>Best Hardware</h3>
+                <p>&#8377;5,000</p>
+              </div>
+
+            </div>
+
+
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt="" />
+                <h3>Best Amateur</h3>
+                <p>&#8377;5,000</p>
+              </div>
+
+            </div>
+
+
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt="" />
+                <h3>Best Innovation</h3>
+                <p>&#8377;5,000</p>
+              </div>
+
+            </div>
+          </div>
         </div>
-  
-        <div class="row" style="justify-content: space-around">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="assets/img/1st.png" class="img-fluid" alt="">
-              <h3>Winner</h3>
-              <p>&#8377;30,000</p>
-            </div>
-          </div>
-
-
-        </div><br>
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="assets/img/2nd.png" class="img-fluid" alt="">
-              <h3>1<sup>st</sup> Runner-Up</h3>
-              <p>&#8377;20,000</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <img src="assets/img/3rd.png" class="img-fluid" alt="">
-              <h3>2<sup>nd</sup> Runner-Up</h3>
-              <p>&#8377;10,000</p>
-            </div>
-          </div>
-
-          
-
-        </div><br>
-        <div class="row">
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box">
-              <img src="assets/img/prize.png" class="img-fluid" alt="">
-              <h3>Best Software</h3>
-              <p>&#8377;5,000<p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="assets/img/prize.png" class="img-fluid" alt="">
-              <h3>Best Hardware</h3>
-              <p>&#8377;5,000</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <img src="assets/img/prize.png" class="img-fluid" alt="">
-              <h3>Best Amateur</h3>
-              <p>&#8377;5,000</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box">
-              <img src="assets/img/prize.png" class="img-fluid" alt="">
-              <h3>Best Innovation</h3>
-              <p>&#8377;5,000</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Prize Section -->
+      </section>
+      <!-- End Prize Section -->
 
       <!-- ======= Sponsors Section ======= -->
       <section id="sponsors" class="sponsors section-bg">
         <div class="container" data-aos="fade-up">
-
           <div class="section-title">
             <h2>Sponsors</h2>
           </div>
 
           <h4 class="sponsor-tier">Gold Sponsors</h4>
-          <div class="sponsors-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="sponsors-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div class="swiper-wrapper">
-
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://devfolio.co" target="_blank"><img src="assets/img/sponsors/Devfolio.png"
-                      class="sponsor-img" alt="DEVFOLIO LOGO"></a>
+                  <a href="https://devfolio.co" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Devfolio.png"
+                      class="sponsor-img"
+                      alt="DEVFOLIO LOGO"
+                  /></a>
                   <h3>Devfolio</h3>
                 </div>
-              </div><!-- End sponsor item -->
+              </div>
+              <!-- End sponsor item -->
 
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://polygon.technology/" target="_blank"><img src="assets\img\sponsors\Polygon.png"
-                      class="sponsor-img" alt="POLYGON LOGO"></a>
+                  <a href="https://polygon.technology/" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\Polygon.png"
+                      class="sponsor-img"
+                      alt="POLYGON LOGO"
+                  /></a>
                   <h3>Polygon</h3>
                 </div>
-              </div><!-- End sponsor item -->
-
+              </div>
+              <!-- End sponsor item -->
             </div>
             <div class="swiper-pagination"></div>
           </div>
 
-
           <h4 class="sponsor-tier">Silver Sponsors</h4>
-          <div class="sponsors-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="sponsors-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div class="swiper-wrapper">
-
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://solana.com" target="_blank"><img src="assets/img/sponsors/Solana.png"
-                      class="sponsor-img" alt="SOLANA LOGO"></a>
+                  <a href="https://solana.com" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Solana.png"
+                      class="sponsor-img"
+                      alt="SOLANA LOGO"
+                  /></a>
                   <h3>Solana</h3>
                 </div>
-              </div><!-- End sponsor item -->
+              </div>
+              <!-- End sponsor item -->
 
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://filecoin.io" target="_blank"><img src="assets\img\sponsors\Filecoin.png"
-                      class="sponsor-img" alt="FILECOIN LOGO"></a>
+                  <a href="https://filecoin.io" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\Filecoin.png"
+                      class="sponsor-img"
+                      alt="FILECOIN LOGO"
+                  /></a>
                   <h3>Filecoin</h3>
                 </div>
-              </div><!-- End sponsor item -->
+              </div>
+              <!-- End sponsor item -->
 
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://replit.com" target="_blank"><img src="assets\img\sponsors\Replit.png"
-                      class="sponsor-img" alt="REPLIT LOGO"></a>
+                  <a href="https://replit.com" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\Replit.png"
+                      class="sponsor-img"
+                      alt="REPLIT LOGO"
+                  /></a>
                   <h3>Replit</h3>
                 </div>
-              </div><!-- End sponsor item -->
-
+              </div>
+              <!-- End sponsor item -->
             </div>
             <div class="swiper-pagination"></div>
           </div>
 
           <h4 class="sponsor-tier">Bronze Sponsors</h4>
-          <div class="sponsors-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="sponsors-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div class="swiper-wrapper">
-
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://www.keyvalue.systems/" target="_blank"><img
-                      src="assets/img/sponsors/Keyvalue_logo.png" class="sponsor-img" alt="KEYVALUE LOGO"></a>
+                  <a href="https://www.keyvalue.systems/" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Keyvalue_logo.png"
+                      class="sponsor-img"
+                      alt="KEYVALUE LOGO"
+                  /></a>
                   <h3>Keyvalue</h3>
                 </div>
-              </div><!-- End sponsor item -->
+              </div>
+              <!-- End sponsor item -->
 
               <div class="swiper-slide">
                 <div class="sponsor-item">
-                  <a href="https://www.verbwire.com/" target="_blank"><img src="assets\img\sponsors\verbwire - logo.svg"
-                      class="sponsor-img" alt="VERBWIRE LOGO"></a>
+                  <a href="https://www.verbwire.com/" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\verbwire - logo.svg"
+                      class="sponsor-img"
+                      alt="VERBWIRE LOGO"
+                  /></a>
                   <h3>Verbwire</h3>
                 </div>
-              </div><!-- End sponsor item -->
-
+              </div>
+              <!-- End sponsor item -->
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
         </div>
-      </section><!-- End sponsors Section -->
-
-
-
+      </section>
+      <!-- End sponsors Section -->
     </main>
     <!-- End #main -->
 
-      <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-6 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>About us</span>
-          </a>
-          <p>IEEE MACE SB is a non profit organization working for the upliftment of students and profeesionals</p>
-          <div class="social-links d-flex mt-4">
-            <a href="https://www.instagram.com/ieeemace/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://github.com/ieee-mace" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/company/ieeemace/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://twitter.com/ieeemace" target="_blank"><i class="bi bi-twitter"></i></a>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>About us</span>
+            </a>
+            <p>
+              IEEE MACE SB is a non profit organization working for the
+              upliftment of students and profeesionals
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://www.instagram.com/ieeemace/" target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://github.com/ieee-mace" target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/ieeemace/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/ieeemace" target="_blank"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
           </div>
-        </div>
 
-        <!--<div class="col-lg-2 col-6 footer-links">
+          <!--<div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -506,36 +687,45 @@
           </ul>
         </div>-->
 
-        <div class="col-lg-6 col-md-12 footer-contact text-center">
-          <h4>Contact Us</h4>
-          <p>
-            <a style="color: #fff;" href="https://wa.me/+918330859663" target="_blank"><i class="bi bi-whatsapp"></i>&nbsp;Krishnaprasad R</a><br>
-            <a style="color:#fff;" href="https://wa.me/+918921931121" target="_blank"><i class="bi bi-whatsapp"></i>&nbsp;Hanna Elsa John </a>
-            <br>
-            <strong>Email:</strong> hack.macesb@gmail.com<br>
-          </p>
-
+          <div class="col-lg-6 col-md-12 footer-contact text-center">
+            <h4>Contact Us</h4>
+            <p>
+              <a
+                style="color: #fff"
+                href="https://wa.me/+918330859663"
+                target="_blank"
+                ><i class="bi bi-whatsapp"></i>&nbsp;Krishnaprasad R</a
+              ><br />
+              <a
+                style="color: #fff"
+                href="https://wa.me/+918921931121"
+                target="_blank"
+                ><i class="bi bi-whatsapp"></i>&nbsp;Hanna Elsa John
+              </a>
+              <br />
+              <strong>Email:</strong> hack.macesb@gmail.com<br />
+            </p>
+          </div>
         </div>
-
       </div>
-    </div>
 
-    <div class="container mt-4">
-      <div class="copyright">
-        2023 &copy; <strong><span>.hack23</span></strong>. All Rights Reserved
+      <div class="container mt-4">
+        <div class="copyright">
+          2023 &copy; <strong><span>.hack23</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed and Developed By .hack23 WebTeam</div>
       </div>
-      <div class="credits">
-        Designed and Developed By .hack23 WebTeam
-      </div>
-    </div>
-
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
-
+    </footer>
+    <!-- End Footer -->
+    <!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -551,7 +741,5 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
