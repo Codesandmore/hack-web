@@ -250,104 +250,186 @@
       <section id="resume" class="resume">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Timeline</h2>
+            <h2>Schedule</h2>
             <!-- <p>.hack();</p> -->
           </div>
-          <div class="timeline">
-            <div class="resume-container">
-              <div class="text-box leftbox">
-                <div class="resume-item">
-                  <h4>Abstract Submission Starts</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;18/08/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;8:00 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="resume-container">
-              <div class="text-box rightbox">
-                <div class="resume-item">
-                  <h4>Ideathon Competition</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;22/08/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;8:00 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="resume-container">
-              <div class="text-box leftbox">
-                <div class="resume-item">
-                  <h4>Coding Contest</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;01/09/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;8:00 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="resume-container">
-              <div class="text-box rightbox">
-                <div class="resume-item">
-                  <h4>Failure Talks</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;05/09/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;7:00 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="resume-container">
-              <div class="text-box leftbox">
-                <div class="resume-item">
-                  <h4>Experience Sharing</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;08/09/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;8:30 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="resume-container">
-              <div class="text-box rightbox">
-                <div class="resume-item">
-                  <h4>Abstract Submission Closing</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;12/09/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;11:59 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="resume-container">
-              <div class="text-box leftbox">
-                <div class="resume-item">
-                  <h4>Hackathon Starts</h4>
-                  <h5>
-                    <i class="bi bi-calendar-week"></i>&nbsp;22/09/2023 <br /><i
-                      class="bi bi-clock"
-                    ></i
-                    >&nbsp;1:00 PM
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div id="dates">
+            <div class="date" onclick="showSchedule('2023-09-21')">September 22, 2023</div>
+            <div class="date" onclick="showSchedule('2023-09-22')">September 23, 2023</div>
+            <div class="date" onclick="showSchedule('2023-09-23')">September 24, 2023</div>
         </div>
-      </section>
+        <div id="schedule-container">
+          <!-- Schedule content for each date -->
+          <div class="schedule" id="schedule-2023-09-21">
+              <!-- Schedule for September 22, 2023 -->
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;11:00 AM : Registration</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;2:00 PM : Inaugral Ceremony</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;4:00 PM : Hackathon Starts</h5>             
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;5:00 PM : Tea/Snacks</h5>             
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;5:20 PM : Tea Time Talks</h5>             
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;9:00 PM : Dinner</h5>             
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;10:00 PM : Status Check 1</h5>             
+                  </div>
+                </div>
+              </div>
+             
+          </div>
+          <div class="schedule" id="schedule-2023-09-22">
+              <!-- Schedule for September 23, 2023 -->
+              
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;8:00 AM : Breakfast</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;10:00 AM : Status Check 2</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;11:00 AM : Pindown Product Launch</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;1:00 PM : Lunch</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;4:30 PM : Status Check 3</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;5:00 PM : Tea/Snacks</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;5:15 PM : Booster Talks</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;9:00 PM : Dinner</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;10:00 PM : Status Check 4</h5>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+          <div class="schedule" id="schedule-2023-09-23">
+              <!-- Schedule for September 24, 2023 -->
+              <div class="resume-container">
+                <div class="text-box leftox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;4:00 AM : Hack Ends</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;7:00 AM : Judging Starts</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;8:15 AM : Breakfast</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;12:00 PM : Lunch</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-container">
+                <div class="text-box leftbox">
+                  <div class="resume-item">
+                    <h5><i class="bi bi-clock"></i>&nbsp;1:15 PM : Closing Ceremony</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+          
+    
+       
+           
+         </div>
+      </section><!-- End Timeline Section -->
+     
+     
+
       <!-- End Timeline Section -->
 
       <!-- End Timeline Section -->

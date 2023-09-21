@@ -1080,11 +1080,10 @@ backdrop-filter: blur(10px);
 }
 .resume .resume-item h5 {
   font-size: 18px;
-  background: #00D1D1;
-  color: rgba(0, 0, 0, 0.993);
+  color:  #00D1D1;
   display: inline-block;
   font-weight: 650;
-  font-family: "Raleway", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   /* margin-bottom: 10px; */
 }
 .resume .resume-item:last-child {
@@ -1126,25 +1125,33 @@ backdrop-filter: blur(10px);
   background: #00D1D1;
   border: 0.1px solid #ffffff;
 }
+.resume .date{
+  cursor: pointer;
+  padding : 10px;
+  margin : 5px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  display: inline-block;
+  margin-left: 200px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+.resume .schedule {
+  display : none;
+  text-align: center;
+}
+.resume #schedule-2023-09-21 {
+  display : block;
+}
+
 .resume .resume-container {
   padding: 10px 25px;
   /* background: #FFFFFF; */
   position: relative;
   width: 50%;
-  animation: movedown 1s linear forwards;
-  opacity: 0;
-  left: 10%;
-}
-@keyframes movedown {
-  0% {
-    opacity: 1;
-    transform: translateY(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+  opacity: 1;
+  margin-left: 25%;
 }
 .resume .resume-container:nth-child(1) {
   animation-delay: 0s;
@@ -1167,11 +1174,22 @@ backdrop-filter: blur(10px);
 .resume .resume-container:nth-child(7) {
   animation-delay: 6s;
 }
+.resume .resume-container:nth-child(8) {
+  animation-delay: 7s;
+}
+.resume .resume-container:nth-child(9) {
+  animation-delay: 8s;
+}
+.resume .resume-container:nth-child(10) {
+  animation-delay: 9s;
+}
 .resume .text-box {
-  padding: 12px 5px;
-  background: #00D1D1;
-  position: relative;
+  cursor: pointer;
+  padding : 10px;
+  margin : 5px;
+  border: 1px solid  #00D1D1;
   border-radius: 18px;
+  display: inline-block;
   width: 400px;
   text-align: center;
 }
@@ -1191,7 +1209,11 @@ backdrop-filter: blur(10px);
     left: 51.2%;
   }
   .resume .text-box {
-    width: 350px;
+    width: 400px;
+  }
+  .resume .date{
+    margin-left: 8%;
+    width: 250px;
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -1199,7 +1221,11 @@ backdrop-filter: blur(10px);
     left: 51%;
   }
   .resume .text-box {
-    width: 300px;
+    width: 400px;
+  }
+  .resume .date{
+    margin-left: 8%;
+    width: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1207,7 +1233,11 @@ backdrop-filter: blur(10px);
     left: 50.3%;
   }
   .resume .text-box {
-    width: 250px;
+    width: 400px;
+  }
+  .resume .date{
+    margin-left: 7%;
+    width: 175px;
   }
 }
 @media (min-width: 555px) and (max-width: 767px) {
@@ -1221,8 +1251,19 @@ backdrop-filter: blur(10px);
     left:0;
   }  
   .resume .text-box {
-    width: 350px;
-    left: 50%;
+    width: 400px;
+    left: 0;
+  }
+  .resume .text-box {
+    width: 300px;
+    left: 0;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 0;
+    width: 160px;
   }
 }
 @media (min-width: 515px) and (max-width: 554px) {
@@ -1236,8 +1277,19 @@ backdrop-filter: blur(10px);
     left:0;
   }  
   .resume .text-box {
+    width: 400px;
+    left: 0;
+  }
+  .resume .text-box {
     width: 300px;
-    left: 50%;
+    left: 0;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 0;
+    width: 150px;
   }
 }
 @media (min-width: 448px) and (max-width: 514px) {
@@ -1251,8 +1303,19 @@ backdrop-filter: blur(10px);
     left:0;
   }  
   .resume .text-box {
-    width: 275px;
-    left: 50%;
+    width: 400px;
+    left: 0;
+  }
+  .resume .text-box {
+    width: 300px;
+    left: 0;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 0;
+    width: 125px;
   }
 }
 @media (min-width: 425px) and (max-width: 447px) {
@@ -1266,8 +1329,15 @@ backdrop-filter: blur(10px);
     left:0;
   }
   .resume .text-box {
-    width: 250px;
-    left: 50%;
+    width: 300px;
+    left: 0;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 2%;
+    width: 110px;
   }
 }
 @media (min-width: 400px) and (max-width: 424px) {
@@ -1281,8 +1351,15 @@ backdrop-filter: blur(10px);
     left:0;
   }
   .resume .text-box {
-    left: 50%;
-    width: 230px;
+    left: 0;
+    width: 275px;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 3%;
+    width: 100px;
   }
 }
 @media (min-width: 375px) and (max-width: 399px) {
@@ -1296,11 +1373,18 @@ backdrop-filter: blur(10px);
     left:0;
   }
   .resume .text-box {
-    left: 50%;
-    width: 225px;
+    left: 0;
+    width: 250px;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 2%;
+    width: 100px;
   }
 }
-@media (min-width: 347px) and (max-width: 374px) {
+@media (min-width: 348px) and (max-width: 374px) {
   .resume .timeline::before {
     left: 15.4%;
   }
@@ -1311,11 +1395,18 @@ backdrop-filter: blur(10px);
     left:0;
   }
   .resume .text-box {
-    left: 50%;
+    left: 0;
     width: 225px;
   }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: 0%;
+    width: 100px;
+  }
 }
-@media (min-width: 320px) and (max-width: 346px) {
+@media (min-width: 320px) and (max-width: 347px) {
   .resume .timeline::before {
     left: 15%;
   }
@@ -1326,9 +1417,16 @@ backdrop-filter: blur(10px);
     left:0;
   }
   .resume .text-box {
-    left: 40%;
-    width: 225px;
+    width: 200px;
   }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: -3%;
+    width: 98px;
+  }
+
 }
 @media (max-width: 319px) {
   .resume .timeline::before {
@@ -1341,8 +1439,15 @@ backdrop-filter: blur(10px);
     left:0;
   }
   .resume .text-box {
-    left: 40%;
-    width: 175px;
+    left: 0;
+    width: 225px;
+  }
+  .resume #schedule-container{
+    margin-right: 60%;
+  }
+  .resume .date{
+    margin-left: -4%;
+    width: 98px;
   }
 }
 

@@ -321,3 +321,20 @@
   new PureCounter();
 
 })()
+
+
+function showSchedule(date) {
+  // Hide all schedules
+  const schedules = document.querySelectorAll('.schedule');
+  schedules.forEach(schedule => {
+      schedule.style.display = 'none';
+  });
+
+  // Show the schedule for the selected date
+  const scheduleId = 'schedule-' + date;
+  const selectedSchedule = document.getElementById(scheduleId);
+  if (selectedSchedule) {
+      selectedSchedule.style.display = 'block';
+  }
+}
+
